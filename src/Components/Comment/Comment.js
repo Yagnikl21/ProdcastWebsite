@@ -4,7 +4,7 @@ export default function Comment() {
     return (
         <div className="comment">
             <div className='comment-container'>
-                <img src='./Images/Sparkle.png' alt='Sparkle' />
+                {/* <img src='./Images/Sparkle.png' alt='Sparkle' /> */}
                 <h1>What our Listen says</h1>
                 <p>Their experience throughout every platform</p>
             </div>

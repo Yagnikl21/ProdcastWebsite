@@ -1,6 +1,6 @@
 .comment {
-    width: 1440px;
-    height: 935px;
+    width: 100%;
+    height: inherit;
     background-color: #EDF3F7;
     display: flex;
     flex-direction: column;
@@ -8,6 +8,8 @@
     overflow: hidden;
     position: relative;
     z-index: 0;
+    padding-bottom: 140px;
+
     .comment-container {
         position: relative;
 
@@ -104,5 +106,139 @@
                 }
             }
         }
+    }
+    
+}
+
+@media (max-width:1024px) {
+    .comment {
+        padding-bottom: 70px;
+    
+        .comment-container {
+            position: relative;
+    
+            margin-top: 80px;
+    
+            h1 {
+                font-size: 40px;
+            }
+    
+            p {
+                font-size: 18.65px;
+            }
+    
+            margin-bottom: 70px;
+        }
+    
+        .review {
+            height: inherit;
+            gap: 20px;
+
+            .review-card {
+                background-color: white;
+                box-sizing: border-box;
+                width: 400px;
+                padding: 0 40px;
+                border-radius: 8px;
+    
+                .review-card-section {
+                    width: 360px;
+                    height: inherit;
+                    padding-top: 20px;
+    
+                    h1 {
+                        font-size: 75.95px;
+                        line-height: 100%;
+                    }
+    
+                    p {
+                        font-size: 18.65px;
+                    }
+    
+                    span {
+                        margin: 20px 0 ;
+    
+                        img {
+                            height: 38px;
+                            width: 38px;
+                        }
+    
+                        .logo-spotify {
+                            margin-left: 10px;
+                            height: 16px;
+                            width: 16px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}
+
+
+@media (max-width:768px) {
+    .comment {
+        padding-bottom: 40px;
+    
+        .comment-container {
+            position: relative;
+    
+            margin-top: 50px;
+    
+            h1 {
+                font-size: 25px;
+            }
+    
+            p {
+                font-size: 11.65px;
+            }
+    
+            margin-bottom: 50px;
+        }
+    
+        .review {
+            height: inherit;
+            gap: 10px;
+
+            .review-card {
+                background-color: white;
+                box-sizing: border-box;
+                width: 300px;
+                padding: 0 40px;
+                border-radius: 8px;
+    
+                .review-card-section {
+                    width: 250px;
+                    height: inherit;
+                    padding-top: 20px;
+    
+                    h1 {
+                        font-size: 55.95px;
+                        line-height: 100%;
+                    }
+    
+                    p {
+                        font-size: 12.65px;
+                    }
+    
+                    span {
+                        margin: 20px 0 ;
+    
+                        img {
+                            height: 38px;
+                            width: 38px;
+                        }
+    
+                        .logo-spotify {
+                            margin-left: 10px;
+                            height: 16px;
+                            width: 16px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }  
     }
 }

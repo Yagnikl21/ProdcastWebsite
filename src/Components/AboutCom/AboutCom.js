@@ -7,20 +7,20 @@ export default function AboutCom() {
       <h1>by every minute of it.</h1>
 
       <div className='ideas'>
-        <div className='idea-box'>
+        <div className='idea-box col-sm-12'>
           <img src='./Images/Illustration 01.svg' alt='illitration' />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
         </div>
 
-        <div className='idea-box'>
+        <div className='idea-box col-sm-12'>
           <img src='./Images/Illustration 02.svg' alt='illitration' />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.  </p>
         </div>
       </div>
 
       <div className='coat'>
-        <img className='bg-4' src='./Images/Vector 4.png' alt="vector4" />
-        <img className='bg-5' src='./Images/Star 4.png' alt="vector5" />
+        {/* <img className='bg-4' src='./Images/Vector 4.png' alt="vector4" />
+        <img className='bg-5' src='./Images/Star 4.png' alt="vector5" /> */}
         <h1><b>
           “
         </b></h1>
@@ -34,7 +34,7 @@ export default function AboutCom() {
         </span>
       </div>
 
-      <img className='bg-3' src="./Images/Vector 29.png" alt="Scribble" />
+      {/* <img className='bg-3' src="./Images/Vector 29.png" alt="Scribble" /> */}
     </div>
   )
 }

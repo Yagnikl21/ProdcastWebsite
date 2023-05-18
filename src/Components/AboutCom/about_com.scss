@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 140px;
-    width: 1440px;
-    height: 1375px;
+    width: 100%;
     position: relative;
 
     h1 {
@@ -90,5 +89,112 @@
         position: absolute;
         top: 1300px;
         z-index: 5;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .about_com {
+        padding-top: 100px;
+        h1 {
+            font-size: 45px;
+        }
+
+        .ideas {
+            margin-top: 50px;
+
+            .idea-box {
+                width: 352px;
+                height: 367px;
+            }
+        }
+
+        .coat {
+            margin-top: 80px;
+            width: 80%;
+            padding: 30px;
+            height: inherit;
+
+            h1 {
+                font-size: 75.95px;
+            }
+
+            span {
+                margin-top: 30px;
+
+                img {
+                    height: 38px;
+                    width: 38px;
+                }
+
+                .logo-spotify {
+                    margin-left: 10px;
+                    height: 16px;
+                    width: 16px;
+                    margin-right: 8px;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about_com {
+        padding-top: 80px;
+        h1 {
+            margin : 0 20px;
+            font-size: 30px;
+        }
+
+        .ideas {
+            margin-top: 40px;
+
+            .idea-box {
+                width: 40%;
+                height: 40%;
+                img{
+                    width: 75%;
+                    height: 75%     
+                }
+            }
+        }
+
+        .coat {
+            margin-top: 50px;
+            width: 80%;
+            padding: 20px;
+            height: inherit;
+
+            h1 {
+                font-size: 55.95px;
+                line-height: 100%;
+            }
+
+            h2{
+                font-size: 20px;
+            }
+            span {
+                margin-top: 20px;
+
+                img {
+                    height: 28px;
+                    width: 28px;
+                }
+
+                .logo-spotify {
+                    margin-left: 10px;
+                    height: 12px;
+                    width: 12px;
+                    margin-right: 8px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
+            margin-bottom: 30px;
+        }
+
     }
 }

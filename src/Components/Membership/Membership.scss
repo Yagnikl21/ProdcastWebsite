@@ -1,6 +1,5 @@
 .membership {
     width: 1440px;
-    height: 1153px;
     z-index: 0;
     background-color: white;
     display: flex;
@@ -43,13 +42,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // grid-gap: 20px;
 
         .mCard {
-            flex: 4;
-            width: 373px;
+            // flex: 4;
+            // width: 373px;
             display: flex;
             align-items: center;
             flex-direction: column;

@@ -31,6 +31,12 @@
     .recent-episodes{
         height: 787px;
         width: 1160px;
-        background: white;
+        background: transparent;
+
+        .episodes-card{
+            width: 570px;
+            height: 249px;
+            background-color: white;
+        }
     }
 }

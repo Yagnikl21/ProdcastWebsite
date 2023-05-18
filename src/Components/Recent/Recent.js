@@ -8,7 +8,9 @@ export default function Recent() {
                 <p>Available on your favorite platform</p>
             </div>
             <div className='recent-episodes'>
-
+                <div className='episodes-card'>
+                    <button className='col-sm-12'>Hello bootstrap is here</button>
+                </div>
             </div>
         </div>
     )
