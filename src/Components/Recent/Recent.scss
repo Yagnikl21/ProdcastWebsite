@@ -1,0 +1,36 @@
+.recent {
+    background-color: #F7EDE8;
+    width: 1440px;
+    height: 1456px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .recent-container {
+        margin-top: 140px;
+        text-align: center;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 60px;
+            line-height: 120%;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 22.65px;
+            line-height: 160%;
+            text-align: center;
+            color: #4D4D4D;
+        }
+
+        margin-bottom: 100px;
+    }
+
+    .recent-episodes{
+        height: 787px;
+        width: 1160px;
+        background: white;
+    }
+}

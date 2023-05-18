@@ -1,0 +1,95 @@
+.membership {
+    width: 1440px;
+    height: 1153px;
+    z-index: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .membership-container {
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 499px;
+            top: -172px;
+        }
+
+        margin-top: 140px;
+        text-align: center;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 60px;
+            line-height: 120%;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 22.65px;
+            line-height: 160%;
+            text-align: center;
+            color: #4D4D4D;
+        }
+
+        margin-bottom: 100px;
+    }
+
+    .membership-card {
+        margin: 0 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+
+        .mCard {
+            flex: 4;
+            width: 373px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 80px;
+
+            .m_Image {
+                margin-bottom: 30px;
+            }
+            H4 {
+                font-weight: 700;
+                margin-bottom: 10px;
+                font-size: 22.65px;
+                line-height: 140%;
+                text-align: center;
+                letter-spacing: -0.02em;
+                color: #000000;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 160%;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+
+    .btn--2 {
+        margin-top: 20px;
+        width: 184px;
+        height: 65px;
+        background: #000000;
+        box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        color: white;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin-bottom: 140px;
+    }
+}

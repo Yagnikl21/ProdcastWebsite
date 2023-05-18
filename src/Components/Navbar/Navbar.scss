@@ -1,0 +1,58 @@
+.navbar {
+
+    background-color: #F7EDE8;
+    width: 1160px;
+    height: 74px;
+    padding: 0;
+    text-decoration: none;
+  
+    margin-bottom: 64px;
+    .left {
+        width: 512px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 74px;
+            height: 74px;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                line-height: 160%;
+                color: #000000;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        font-size: 14px;
+
+        .btn-1 {
+            width: 188px;
+            height: 41px;
+            border: 2px solid #000000;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .btn-2 {
+            width: 136px;
+            height: 41px;
+            background: #000000;
+            box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            color: white;
+        }
+    }
+}

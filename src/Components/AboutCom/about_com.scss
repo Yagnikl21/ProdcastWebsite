@@ -1,0 +1,94 @@
+.about_com {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+    width: 1440px;
+    height: 1375px;
+    position: relative;
+
+    h1 {
+        font-weight: 700;
+        font-size: 59.3px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #000000;
+    }
+
+    .ideas {
+        width: inherit;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+
+        .idea-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            width: 472px;
+            height: 367px;
+        }
+    }
+
+    .coat {
+        margin-top: 120px;
+        border-radius: 8px;
+        width: 1160px;
+        background-color: #F7EDE8;
+        height: 366px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 40px;
+        flex-direction: column;
+        position: relative;
+
+        .bg-5 {
+            position: absolute;
+            left: 1060px;
+            top: -56px;
+        }
+
+        .bg-4 {
+            position: absolute;
+            top: 197px;
+            left: -60px;
+        }
+
+        h1 {
+            font-size: 95.95px;
+            color: #CD4631;
+            line-height: 96px;
+            margin: 0;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+
+            img {
+                height: 48px;
+                width: 48px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .logo-spotify {
+                margin-left: 10px;
+                height: 16px;
+                width: 16px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .bg-3 {
+        position: absolute;
+        top: 1300px;
+        z-index: 5;
+    }
+}
