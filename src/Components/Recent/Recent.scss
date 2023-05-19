@@ -1,10 +1,11 @@
 .recent {
     background-color: #F7EDE8;
-    width: 1440px;
-    height: 1456px;
+    width: 100%;
+    height: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 140px;
 
     .recent-container {
         margin-top: 140px;
@@ -28,15 +29,263 @@
         margin-bottom: 100px;
     }
 
-    .recent-episodes{
-        height: 787px;
-        width: 1160px;
+    .recent-episodes {
+        // width : 100%;
+        height: inherit;
         background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -10px;
 
-        .episodes-card{
-            width: 570px;
-            height: 249px;
+        .episodes-card {
+            width: 100%;
             background-color: white;
+            padding: 16px;
+            margin: 10px;
+            flex: 0 0 calc(50% - 20px);
+            border: 2px solid #000000;
+            box-shadow: 10px 10px 0px #81ADC8;
+            border-radius: 12px;
+
+            .first {
+                display: flex;
+
+                img {
+                    width: 166px;
+                    height: 166px;
+                    margin-right: 20px;
+                }
+
+                span {
+                    h4 {
+                        font-weight: 700;
+                        font-size: 22.65px;
+                        line-height: 140%;
+                        letter-spacing: -0.02em;
+                        color: #CD4631;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 160%;
+                        color: #4D4D4D;
+
+                    }
+                }
+            }
+
+            .second {
+                margin-top: 20px;
+
+                .left {
+                    display: flex;
+                    gap: 15px;
+
+                    button {
+                        background-color: transparent;
+                        width: inherit;
+                        padding: 0 10px;
+                        height: 31px;
+                        border: 1px solid #4D4D4D;
+                        border-radius: 4px;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 160%;
+                        color: #4D4D4D;
+                    }
+                }
+            }
         }
     }
+
+    .btn--2 {
+        margin-top: 60px;
+        width: 184px;
+        height: 65px;
+        background: #000000;
+        box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        color: white;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .recent {
+        padding: 0 70px;
+
+        .recent-container {
+            margin-top: 70px;
+
+            h1 {
+                margin-bottom: 10px;
+                font-size: 40px;
+                line-height: 120%;
+            }
+
+            p {
+                font-size: 16.65px;
+                line-height: 120%;
+            }
+
+            margin-bottom: 50px;
+        }
+
+        .recent-episodes {
+            margin: -8px;
+
+            .episodes-card {
+                padding: 8px;
+                margin: 8px;
+                flex: 0 0 calc(50% - 20px);
+                box-shadow: 8px 8px 0px #81ADC8;
+
+                .first {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        margin-right: 10px;
+                    }
+
+                    span {
+                        h4 {
+                            font-size: 17.65px;
+                            line-height: 100%;
+                        }
+
+                        p {
+                            font-size: 10px;
+                            line-height: 120%;
+
+                        }
+                    }
+                }
+
+                .second {
+                    margin-top: 10px;
+
+                    .left {
+                        gap: 11px;
+
+                        button {
+                            width: inherit;
+                            padding: 0 5px;
+                            height: 25px;
+                            border: 1px solid #4D4D4D;
+                            border-radius: 4px;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 160%;
+                            color: #4D4D4D;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .btn--2 {
+            margin-top: 35px;
+            width: 154px;
+            height: 45px;
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 70px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .recent {
+        padding: 0 30px;
+
+        .recent-container {
+            margin-top: 30px;
+
+            h1 {
+                margin-bottom: 10px;
+                font-size: 25px;
+                line-height: 120%;
+            }
+
+            p {
+                font-size: 12.65px;
+                line-height: 120%;
+            }
+
+            margin-bottom: 28px;
+        }
+
+        .recent-episodes {
+            margin: -6px;
+            width: 100%;
+
+            .episodes-card {
+                width: 100%;
+                padding: 6px;
+                margin: 10px;
+                // flex: 0 0 calc(50% - 20px);
+                box-shadow: 8px 8px 0px #81ADC8;
+
+                .first {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        margin-right: 10px;
+                    }
+
+                    span {
+                        h4 {
+                            font-size: 17.65px;
+                            line-height: 100%;
+                        }
+
+                        p {
+                            font-size: 10px;
+                            line-height: 120%;
+
+                        }
+                    }
+                }
+
+                .second {
+                    margin-top: 10px;
+
+                    .left {
+                        gap: 11px;
+
+                        button {
+                            width: inherit;
+                            padding: 0 5px;
+                            height: 25px;
+                            border: 1px solid #4D4D4D;
+                            border-radius: 4px;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 160%;
+                            color: #4D4D4D;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn--2 {
+            margin-top: 25px;
+            width: 134px;
+            height: 38px;
+            font-size: 9px;
+            line-height: 12px;
+            margin-bottom: 50px;
+        }
+    }
+
+
 }

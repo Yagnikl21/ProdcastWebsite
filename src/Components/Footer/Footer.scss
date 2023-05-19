@@ -1,0 +1,315 @@
+.footer {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        position: relative;
+        background-color: #EDF3F7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 143px 0;
+
+        h1 {
+            font-weight: 700;
+            font-size: 59.3px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: -0.02em;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 22.65px;
+            line-height: 160%;
+            text-align: center;
+            color: #4D4D4D;
+            margin-bottom: 140px;
+        }
+
+        .btn--2 {
+            width: 184px;
+            height: 65px;
+            background: #000000;
+            box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            margin-bottom: 24px;
+        }
+
+        .f-p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+            color: #4D4D4D;
+        }
+
+        span {
+            display: flex;
+            gap: 21px;
+        }
+
+        .img-f-1,.img-f-2{
+            position: absolute;
+            // width: 400px;
+            // height: 800px;
+        }
+    }
+
+    .down{
+        background-color: white;
+        height: inherit;
+        padding: 140px 140px 80px;
+
+        .d-top{
+            display: flex;
+
+            .fd-1{
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap : 50px;
+                .img-l{
+                    height: 77px;
+                    width: 77px;
+                }
+                span{
+                    display: flex;
+                    gap : 25px;
+                }
+            }
+
+            .mobile-f{ flex: 2;
+                display: flex;
+                .fd-2 , .fd-3{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    flex: 1;
+                    ul{
+                        list-style: none;
+                        li{
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+            }
+
+            .fd-4{
+                flex : 2;
+                display: flex;
+                flex-direction: column;
+                gap : 45px;
+                .support-logo{
+                    display: flex;
+                    gap : 25px;
+                    img{
+                        height: 28px;
+                        width: 102px;
+                    }
+                }
+                .avilable{
+                    display: flex;
+                    gap : 20px;
+                    .app{
+                        background-color: blue;
+                        height: 36px;
+                        width: 36px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            margin-bottom: 80px;
+        }
+
+        hr{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .footer {
+        .top {
+            padding: 80px 0;
+    
+            h1 {
+                font-size: 40.3px;
+                margin-bottom: 20px;
+            }
+    
+            p {
+                font-size: 16.65px;
+                line-height: 120%;
+                margin-bottom: 80px;
+            }
+    
+            .btn--2 {
+                width: 124px;
+                height: 45px;
+                font-size: 10px;
+                line-height: 12px;
+                margin-bottom: 18px;
+            }
+    
+            .f-p {
+                font-size: 10px;
+                line-height: 120%;
+            }
+    
+            span {
+                gap: 15px;
+            }
+    
+        }
+    
+        .down{
+            padding: 80px 80px 60px;
+    
+            .d-top{
+    
+                .fd-1{
+                    gap : 30px;
+                    .img-l{
+                        height: 55px;
+                        width: 55px;
+                    }
+                    span{
+                        gap : 18px;
+                    }
+                }
+    
+                .fd-2 , .fd-3{
+                    ul{
+                        li{
+                            margin-bottom: 18px;
+                        }
+                    }
+                }
+    
+                .fd-4{
+                    gap : 32px;
+                    .support-logo{
+                        gap : 18px;
+                        img{
+                            height: 20px;
+                            width: 80px;
+                        }
+                    }
+                    .avilable{
+                        gap : 12px;
+                        .app{
+                            height: 24px;
+                            width: 24px;
+                        }
+                    }
+                }
+                margin-bottom: 50px;
+            }
+    
+            hr{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .footer {
+        .top {
+            padding: 40px 0;
+    
+            h1 {
+                font-size: 30.3px;
+                margin-bottom: 14px;
+            }
+    
+            p {
+                font-size: 13.65px;
+                line-height: 120%;
+                margin-bottom: 40px;
+            }
+    
+            .btn--2 {
+                width: 104px;
+                height: 25px;
+                font-size: 10px;
+                line-height: 12px;
+                margin-bottom: 18px;
+            }
+    
+            .f-p {
+                font-size: 10px;
+                line-height: 120%;
+            }
+    
+            span {
+                gap: 15px;
+            }
+    
+        }
+    
+        .down{
+            padding: 40px 40px 30px;
+    
+            .d-top{
+                display: flex;
+                flex-direction: column;
+                gap : 30px;
+                align-items: flex-start;
+                .fd-1{
+                    gap : 15px;
+                    .img-l{
+                        height: 40px;
+                        width: 40px;
+                    }
+                    span{
+                        gap : 12px;
+                    }
+                }
+    
+                .mobile-f{
+                    margin-top: 20px;
+                    display: flex;
+                    .fd-2 , .fd-3{
+                        ul{
+                            li{
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+                }
+    
+                .fd-4{
+                    gap : 24px;
+                    .support-logo{
+                        gap : 12px;
+                        img{
+                            height: 16px;
+                            width: 65px;
+                        }
+                    }
+                    .avilable{
+                        gap : 10px;
+                        align-items: center;
+                        .app{
+                            height: 28px;
+                            width: 28px;
+                        }
+                    }
+                }
+                margin-bottom: 25px;
+            }
+    
+            hr{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

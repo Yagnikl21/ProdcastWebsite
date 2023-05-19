@@ -4,7 +4,7 @@ export default function Membership() {
     return (
         <div className="membership">
             <div className='membership-container'>
-                <img src='./Images/Scribble (1).png' alt='Sparkle' />
+                {/* <img src='./Images/Scribble (1).png' alt='Sparkle' /> */}
                 <h1>Membership benefits</h1>
                 <p>Become our sponsor and get all benefits</p>
             </div>

@@ -1,5 +1,5 @@
 .membership {
-    width: 1440px;
+    width: 100%;
     z-index: 0;
     background-color: white;
     display: flex;
@@ -42,13 +42,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // display: grid;
-        // grid-template-columns: repeat(3, 1fr);
-        // grid-gap: 20px;
 
         .mCard {
-            // flex: 4;
-            // width: 373px;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -90,5 +85,114 @@
         line-height: 17px;
         color: #FFFFFF;
         margin-bottom: 140px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .membership {
+        width: 100%;
+    
+        .membership-container {
+    
+            margin-top: 70px;
+    
+            h1 {
+                margin-bottom: 10px;
+                font-size: 40px;
+                line-height: 100%;
+                letter-spacing: -0.02em;
+            }
+    
+            p {
+                font-weight: 500;
+                font-size: 16.65px;
+                line-height: 120%;
+            }
+    
+            margin-bottom: 70px;
+        }
+    
+        .membership-card {
+            margin: 0 80px;
+            .mCard {
+                margin-bottom: 50px;
+    
+                .m_Image {
+                    margin-bottom: 15px;
+                }
+                H4 {
+                    margin-bottom: 7px;
+                    font-size: 16.65px;
+                    line-height: 120%;
+                }
+    
+                p {
+                    font-size: 12px;
+                    line-height: 120%;
+                }
+            }
+        }
+    
+        .btn--2 {
+            margin-top: 10px;
+            width: 154px;
+            height: 45px;
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 70px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .membership {
+        width: 100%;
+    
+        .membership-container {
+    
+            margin-top: 50px;
+    
+            h1 {
+                margin-bottom: 7px;
+                font-size: 30px;
+            }
+    
+            p {
+                font-size: 13.65px;
+                line-height: 120%;
+            }
+    
+            margin-bottom: 50px;
+        }
+    
+        .membership-card {
+            margin: 0 30px;
+            .mCard {
+                margin-bottom: 35px;
+    
+                .m_Image {
+                    margin-bottom: 12px;
+                }
+                H4 {
+                    margin-bottom: 7px;
+                    font-size: 12.65px;
+                    line-height: 120%;
+                }
+    
+                p {
+                    font-size: 11px;
+                    line-height: 120%;
+                }
+            }
+        }
+    
+        .btn--2 {
+            margin-top: 10px;
+            width: 134px;
+            height: 38px;
+            font-size: 9px;
+            line-height: 12px;
+            margin-bottom: 50px;
+        }
     }
 }
