@@ -1,22 +1,15 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.scss'
-import Header from './Components/Header/Header'
-import AboutCom from './Components/AboutCom/AboutCom'
-import Comment from './Components/Comment/Comment'
-import Membership from './Components/Membership/Membership'
-import Recent from './Components/Recent/Recent'
-import Footer from './Components/Footer/Footer'
+import Home from './page/Home/Home'
+import About from './page/About/About'
+import Podcast from './page/PodcastPage/Podcast'
 
 export default function App() {
   return (
-    <div className='app'>
-        <Header />
-        <AboutCom />
-         <Comment /> 
-         {/* <img className='bg--3' src="./Images/Vector 29.png" alt="Scribble" /> */}
-         <Membership />
-         {/* <img className='bg-4' src="./Images/Vector 29.png" alt="Scribble" />  */}
-         <Recent /> 
-         <Footer /> 
-    </div>
+    <Routes >
+      <Route path='/' element={<Home />} />
+      <Route path='about' element={<About />} />
+      <Route path='podcast/:id' element={<Podcast />} />
+    </ Routes >
   )
 }

@@ -13,7 +13,7 @@ export default function Header() {
       <p>We cover all kinds of categories and</p>
       <p>a weekly special guest.</p>
       <button className='btn--2'>SUBCRIBE</button>
-      <Cover />
+      <Cover className="cover"/>
 
       <div className='support'>
           <h4>Support by:</h4>

@@ -10,20 +10,20 @@ export default function Footer() {
                 <button className='btn--2'>SEE PRICING</button>
                 <p className='f-p'>Content also available on:</p>
                 <span className='logos'>
-                    <img src='./Images/google-f.png' alt='google-f.png' />
-                    <img src='./Images/spotify-f.png' alt='spotify-f.png' />
-                    <img src='./Images/youtube-f.png' alt='youtube-f.png' />
+                    <img src='../Images/google-f.png' alt='google-f.png' />
+                    <img src='../Images/spotify-f.png' alt='spotify-f.png' />
+                    <img src='../Images/youtube-f.png' alt='youtube-f.png' />
                 </span>
             </div>
             <div className='down'>
                 <div className='d-top'>
                     <div className="fd-1">
-                        <img src="./Images/logo.png" className='img-l' alt='log' ></img>
+                        <img src="../Images/logo.png" className='img-l' alt='log' ></img>
                         <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit.</p>
                         <span>
-                            <img src="./Images/twitter.png" alt='twitter' ></img>
-                            <img src="./Images/tiktok.png" alt='tiktok' ></img>
-                            <img src="./Images/instagram.png" alt='instagram' ></img>
+                            <img src="../Images/twitter.png" alt='twitter' ></img>
+                            <img src="../Images/tiktok.png" alt='tiktok' ></img>
+                            <img src="../Images/instagram.png" alt='instagram' ></img>
                         </span>
                     </div>
                     <span className="mobile-f">

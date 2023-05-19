@@ -1,0 +1,242 @@
+.about {
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 140px;
+        width: 100%;
+
+        .offers {
+            position: absolute;
+            width: 80%;
+            top: -117px;
+            left: 10%;
+            display: flex;
+            gap: 20px;
+
+            .offer-card {
+                background-color: white;
+                flex: 1;
+                padding: 59px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                border: 1.5px solid #000000;
+                box-shadow: 6px 6px 0px #CD4631;
+                border-radius: 8px;
+                text-align: center;
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 59.3px;
+                    line-height: 120%;
+                    letter-spacing: -0.02em;
+                    color: #CD4631;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 160%;
+                    text-align: center;
+                    color: #4D4D4D;
+                }
+            }
+        }
+
+        .comment-container {
+            margin-top: 21px;
+            text-align: center;
+
+            h1 {
+                margin-bottom: 20px;
+                font-size: 60px;
+                line-height: 120%;
+                letter-spacing: -0.02em;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 22.65px;
+                line-height: 160%;
+                text-align: center;
+                color: #4D4D4D;
+            }
+
+            margin-bottom: 32px;
+        }
+        img{
+            width: 100%;
+        }
+        .info {
+            P {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 160%;
+                color: #4D4D4D;
+            }
+        }
+
+        hr {
+            margin: 81px 0 50px;
+            border: 0.5px solid #4D4D4D;
+            width: 80%;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 36.65px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            color: #000000;
+            margin-top: 60px;
+            margin-bottom: 80PX;
+        }
+
+        .two-photo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap : 2.5%;
+            img{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .about {
+        .aboutContainer {
+            padding: 70px;
+            .offers {
+                top: -7%;
+                gap: 20px;
+    
+                .offer-card {
+                    padding: 30px 0;
+                    gap: 10px;
+    
+                    h1 {
+                        font-size: 40.3px;
+                        line-height: 120%;
+                    }
+    
+                    p {
+                        font-size: 12px;
+                        line-height: 120%;
+                    }
+                }
+            }
+    
+            .comment-container {
+                margin-top: 15px;
+    
+                h1 {
+                    margin-bottom: 15px;
+                    font-size: 40px;
+                    line-height: 120%;
+                }
+    
+                p {
+                    font-size: 15.65px;
+                    line-height: 120%;
+                }
+    
+                margin-bottom: 25px;
+            }
+            img{
+                width: 100%;
+            }
+            .info {
+                P {
+                    font-size: 11px;
+                    line-height: 120%;
+                }
+            }
+    
+            hr {
+                margin: 40px 0 25px;
+                border: 0.5px solid #4D4D4D;
+                width: 80%;
+            }
+    
+            h3 {
+                font-size: 22.65px;
+                color: #000000;
+                margin-top: 30px;
+                margin-bottom: 40PX;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .about {
+        .aboutContainer {
+            padding: 40px;
+            .offers {
+                top: -7%;
+                gap: 20px;
+    
+                .offer-card {
+                    padding: 18px 0;
+                    gap: 8px;
+    
+                    h1 {
+                        font-size: 25.3px;
+                        line-height: 120%;
+                    }
+    
+                    p {
+                        font-size: 10px;
+                        line-height: 120%;
+                    }
+                }
+            }
+    
+            .comment-container {
+                margin-top: 15px;
+    
+                h1 {
+                    margin-bottom: 15px;
+                    font-size: 25px;
+                    line-height: 120%;
+                }
+    
+                p {
+                    font-size: 12.65px;
+                    line-height: 120%;
+                }
+    
+                margin-bottom: 18px;
+            }
+            img{
+                width: 100%;
+            }
+            .info {
+                P {
+                    font-size: 11px;
+                    line-height: 120%;
+                    margin-bottom: 29px;
+                }
+                
+            }
+    
+            hr {
+                margin: 30px 0 20px;
+                border: 0.5px solid #4D4D4D;
+                width: 80%;
+            }
+    
+            h3 {
+                font-size: 18.65px;
+                color: #000000;
+                margin-top: 18px;
+                margin-bottom: 20PX;
+            }
+        }
+    }
+}
