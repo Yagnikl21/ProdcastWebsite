@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Navbar.scss'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   const stlye = {
-    marginBottom : isDropdownOpen ? '50px' : '0'
+    marginBottom: isDropdownOpen ? '50px' : '0'
   }
 
   useEffect(() => {
@@ -37,15 +37,26 @@ export default function Navbar() {
   return (
     <div className='navbar'>
       <div className='left'>
-        <Link to="/"><img src='../Images/logo.png' style={stlye} alt='logo' /></Link>
+        <NavLink to="/"><img src='../Images/logo.png' style={stlye} alt='logo' /></NavLink>
         <div className="menu">
-          <Link to='/podcast/1'>Episodes</Link>
-          <Link to='/about' >About</Link>
-          <Link>More</Link>
+          <NavLink to='/podcast/1' style={({ isActive }) => ({
+            color: isActive ? '#161616' : '#4D4D4D',
+            textDecoration: isActive ? 'underline' : 'none'
+          })}>Episodes</NavLink>
+          <NavLink to='/about' style={({ isActive }) => ({
+            color: isActive ? '#161616' : '#4D4D4D',
+            textDecoration: isActive ? 'underline' : 'none'
+          })} >About</NavLink>
+          <NavLink to='/blog' style={({ isActive }) => ({
+            color: isActive ? '#161616' : '#4D4D4D',
+            textDecoration: isActive ? 'underline' : 'none'
+          })} >Blog</NavLink>
         </div>
       </div>
       <div className='right'>
-        <button className="btn-1">RECENT EPISODES</button>
+        <Link to={`${window.location.pathname}#Recent`}>
+          <button className="btn-1">RECENT EPISODES</button>
+        </Link>
         <button className='btn-2'>SUBCRIBE</button>
         <button
           className={`navbar-toggler`}
@@ -59,11 +70,11 @@ export default function Navbar() {
       {isDropdownOpen && (
         <div className="dropdown-content">
           <ul>
-            <li><Link to='/podcast/1'>Episodes</Link></li>
+            <li><NavLink to='/podcast/1'>Episodes</NavLink></li>
             <hr />
-            <li><Link to='/about' >About</Link></li>
+            <li><NavLink to='/about' >About</NavLink></li>
             <hr />
-            <li><Link>More</Link></li>
+            <li><NavLink>More</NavLink></li>
             <hr />
             <li><button className="btn-1">RECENT EPISODES</button></li>
             <hr />

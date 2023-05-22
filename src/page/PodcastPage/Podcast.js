@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import Navbar from '../../Components/Navbar/Navbar';
 import './Podcast.scss';
 import Footer from '../../Components/Footer/Footer';
+import LatestEpisode from '../../Components/LatestEpisode/LatestEpisode';
 
 export default function Podcast() {
 
@@ -41,7 +42,7 @@ export default function Podcast() {
                     <button>Health</button>
                 </span>
             </div>
-
+            <LatestEpisode />
             <Footer />
         </div>
     )

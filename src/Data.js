@@ -7,4 +7,5 @@ const arary = [
     { id:6,src: "../Images/cover-5.png" }
 ]
 
+
 export default arary;

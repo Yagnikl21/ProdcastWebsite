@@ -3,6 +3,21 @@ import Footer from '../../Components/Footer/Footer'
 import './About.scss'
 
 export default function About() {
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //       try {
+    //         const response = await fetch('https://randomuser.me/api/');
+    //         const data = await response.json();
+    //         console.log(data);
+    //       } catch (error) {
+    //         console.error(error);
+    //       }
+    //     };
+    
+    //     fetchData();
+    //   }, []);
+
     return (
         <div className='about'>
             <Header />
