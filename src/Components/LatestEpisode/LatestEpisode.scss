@@ -57,8 +57,11 @@
             margin: 10px;
             flex: 0 0 calc(50% - 20px);
             border: 2px solid #000000;
-            box-shadow: 10px 10px 0px #81ADC8;
             border-radius: 12px;
+            
+            &:hover{
+                box-shadow: 10px 10px 0px #81ADC8;
+            }
 
             .first {
                 display: flex;
